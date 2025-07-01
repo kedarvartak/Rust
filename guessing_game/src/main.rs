@@ -16,6 +16,10 @@ fn main() {
             //      Hence, you need to write &mut guess rather than &guess to make it mutable
             .expect("Failed to read line");
 
+        // guess -> using the value directly
+        // &guess -> using the value immutably (read only)
+        // mut& guess -> using the value mutably (rw access)
+
         let guess: i32 = guess.trim().parse() // this feature is called shadowing
             .expect("Please type a number!");
         // In Rust, variables are immutable by default, which means that when a value is
