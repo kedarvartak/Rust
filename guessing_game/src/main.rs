@@ -22,6 +22,7 @@ fn main() {
 
         let guess: i32 = guess.trim().parse() // this feature is called shadowing
             .expect("Please type a number!");
+        // Allows a variable to be redeclared with the same name, even with a new type or immutability.
         // In Rust, variables are immutable by default, which means that when a value is
         // assigned, the value won't change. To make variables mutable, we add mut
 
